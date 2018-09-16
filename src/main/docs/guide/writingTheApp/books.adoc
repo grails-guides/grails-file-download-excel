@@ -9,7 +9,7 @@ include::{sourceDir}/src/main/groovy/example/grails/Book.groovy[]
 Create a sample service which fetches several books:
 
 [source, groovy]
-.src/main/groovy/example/grails/BookService.groovy
+.grails-app/services/example/grails/BookService.groovy
 ----
 include::{sourceDir}/grails-app/services/example/grails/BookService.groovy[]
 ----
