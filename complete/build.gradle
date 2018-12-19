@@ -9,6 +9,7 @@ buildscript {
 //tag::buildscriptDependenciesWebdriverBinaries[]
         classpath "gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:$webdriverBinariesVersion"
 //end::buildscriptDependenciesWebdriverBinaries[]
+        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:$assetPipelineVersion"
     }
 }
 
