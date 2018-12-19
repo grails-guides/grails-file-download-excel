@@ -5,9 +5,9 @@ buildscript {
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
-        classpath "gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:1.4"
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
 //tag::buildscriptDependenciesWebdriverBinaries[]
+        classpath "gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:$webdriverBinariesVersion"
 //end::buildscriptDependenciesWebdriverBinaries[]
     }
 }
