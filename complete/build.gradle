@@ -70,8 +70,8 @@ dependencies {
     //end::geb[]
 
     //tag::spreadsheetbuilder[]
-    compile 'builders.dsl:spreadsheet-builder-poi:1.0.5'
-    compile 'builders.dsl:spreadsheet-builder-groovy:1.0.5'
+    compile "builders.dsl:spreadsheet-builder-poi:$spreadsheetBuilderVersion"
+    compile "builders.dsl:spreadsheet-builder-groovy:$spreadsheetBuilderVersion"
     //end::spreadsheetbuilder[]
 }
 
