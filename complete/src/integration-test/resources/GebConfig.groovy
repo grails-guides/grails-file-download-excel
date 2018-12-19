@@ -1,27 +1,36 @@
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.firefox.FirefoxDriver
-
-ChromeOptions options = new ChromeOptions()
-if ( System.getProperty('download.folder') ) {
-    options.setExperimentalOption("prefs", [
-            "profile.default_content_settings.popups":  0, // <1>
-            "download.default_directory": System.getProperty('download.folder') // <2>
-    ])
-}
+import org.openqa.selenium.firefox.FirefoxOptions
+import org.openqa.selenium.safari.SafariDriver
 
 environments {
 
+    // You need to configure in Safari -> Develop -> Allowed Remote Automation
+    safari {
+        driver = { new SafariDriver() }
+    }
+
     // run via “./gradlew -Dgeb.env=chrome iT”
     chrome {
-        driver = { new ChromeDriver(options) }
+        driver = { new ChromeDriver() }
     }
 
     // run via “./gradlew -Dgeb.env=chromeHeadless iT”
     chromeHeadless {
         driver = {
-            options.addArguments('headless')
-            new ChromeDriver(options)
+            ChromeOptions o = new ChromeOptions()
+            o.addArguments('headless')
+            new ChromeDriver(o)
+        }
+    }
+
+    // run via “./gradlew -Dgeb.env=firefoxHeadless iT”
+    firefoxHeadless {
+        driver = {
+            FirefoxOptions o = new FirefoxOptions()
+            o.addArguments('-headless')
+            new FirefoxDriver(o)
         }
     }
 
