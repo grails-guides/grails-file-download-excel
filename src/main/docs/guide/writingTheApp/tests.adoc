@@ -3,9 +3,7 @@ easy is to test that the file downloads but also that the downloaded file conten
 
 We use also, Geb; a browser automation solution.
 
-We told Grails CLI to use `geb2` feature when we created the app in <<writingTheApp, Writing the App>> section.
-
-Grails `geb2` feature includes the necessary Geb dependencies:
+By default, a Grails includes the necessary Geb dependencies:
 
 [source, groovy]
 .build.gradle
