@@ -11,6 +11,5 @@ writingTheApp:
   excel: Excel Creation
   controller: Controller
   tests: Tests
-runningTheApp: Running the app
 helpWithGrails:
   title: Help with Grails
