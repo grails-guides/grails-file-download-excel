@@ -1,18 +1,11 @@
-Guide: 
+# Download an Excel file in Grails App
 
-http://guides.grails.org/grails-file-download-excel/guide/index.html
+This repository contains the worked sample app for the [Download an Excel file in Grails App](https://grails.apache.org/guides/grails-file-download-excel/4/guide/index.html) guide on the Apache Grails site.
 
-How to run tests:
+## Run the example
 
-./gradlew -Dgeb.env=chrome -Ddownload.folder=/Users/sdelamo/Downloads integrationTest
+`./gradlew bootRun`
 
-Dependencies:
+## Maintained at apache/grails-static-website
 
-* [Spreadsheet builder](http://spreadsheet.dsl.builders) [Github](https://github.com/dsl-builders/spreadsheet), [MVNrepository](https://mvnrepository.com/artifact/builders.dsl/spreadsheet-builder-poi)
-* [Asset Pipeline](http://www.asset-pipeline.com)[Github](https://github.com/bertramdev/asset-pipeline), [MVNrepository](https://mvnrepository.com/artifact/com.bertramlabs.plugins/asset-pipeline-core)
-
-It also configures Selenium versions with Chrome and Gecko:
-
-http://chromedriver.chromium.org
-
-https://github.com/mozilla/geckodriver/releases
+The guide narrative is maintained at https://github.com/apache/grails-static-website. Changes to the guide content go there; this repo holds the worked sample app only.
